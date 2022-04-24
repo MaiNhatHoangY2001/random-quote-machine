@@ -1,0 +1,64 @@
+
+#quote-box {
+	position: relative;
+	position: fixed; /* or absolute */
+	top: 50%;
+	left: 50%;
+	width: 35rem;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 5rem;
+	border-radius: 5px;
+}
+
+#new-quote {
+	position: absolute;
+	right: 5rem;
+	padding: 15px;
+}
+
+#tweet-quote {
+	position: absolute;
+	left: 5rem;
+	padding: 0.5rem;
+	border: 0px solid white;
+	width: 2rem;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+#tweet-quote,
+#new-quote {
+	cursor: pointer;
+	color: white;
+	border: 0px solid white;
+	border-radius: 5px;
+	bottom: 2.5rem;
+}
+
+
+body,#tweet-quote,
+#new-quote {
+	-webkit-transition: background-color 1000ms linear;
+	-moz-transition: background-color 1000ms linear;
+	transition: background-color 1000ms linear;
+}
+
+
+#text {
+	text-align: center;
+	left: 5rem;
+}
+
+#author {
+	text-align: right;
+	font-size: 1.4rem;
+}
+
+#author, #text{
+	opacity: 1;
+	-webkit-transition: opacity 1000ms linear;
+	-moz-transition: opacity 1000ms linear;
+	transition: opacity 1000ms linear;
+}
